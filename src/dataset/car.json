@@ -1,0 +1,17 @@
+[
+  {
+    "model": "BMW Z3",
+    "image": "bmw-z3.jpg",
+    "board": "SERIOUSLY_UNCOOL"
+  },
+  {
+    "model": "BMW Z4",
+    "image": "bmw-z4.jpg",
+    "board": "COOL"
+  },
+  {
+    "model": "Fiat Multipla",
+    "image": "fiat-multipla.jpg",
+    "board": "COOL"
+  }
+]

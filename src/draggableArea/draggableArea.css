@@ -1,0 +1,16 @@
+.draggableArea {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-right: 1px dotted #fff;
+  flex: 1;
+}
+
+.draggableArea .board {
+  min-width: calc(25% - 2px);
+  border-left: 2px dotted #fff;
+}
+
+.draggableArea .board:first-child {
+  border-left: none;
+}
