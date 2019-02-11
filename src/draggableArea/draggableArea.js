@@ -3,6 +3,7 @@ import "./draggableArea.css";
 import { BOARDS } from "../enums/boards";
 import cars from "../dataset/car.json";
 import Car from "../car/car";
+import classNames from "classnames";
 
 export default function DraggableArea() {
   const [indexCar, updateIndexCar] = useState(0);
@@ -13,7 +14,6 @@ export default function DraggableArea() {
       alert("correct!");
       updateIndexCar(indexCar + 1);
     } else {
-      alert("not correct!");
     }
   };
 
@@ -25,7 +25,7 @@ export default function DraggableArea() {
     <React.Fragment>
       <div className="draggableArea">
         <div
-          className={BOARDS.SERIOUSLY_UNCOOL + " board"}
+          className={classNames([BOARDS.SERIOUSLY_UNCOOL, "board"])}
           onDrop={() => updatingCar(BOARDS.SERIOUSLY_UNCOOL)}
           onDragOver={event => allowDrop(event)}
         />

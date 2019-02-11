@@ -11,6 +11,11 @@
   border-left: 2px dotted #fff;
 }
 
+.draggableArea .board:hover {
+  transition: all 400ms ease-in-out;
+  background-color: #444;
+}
+
 .draggableArea .board:first-child {
   border-left: none;
 }
