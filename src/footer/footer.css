@@ -1,0 +1,21 @@
+footer {
+  height: 8%;
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(-180deg, #eaeaea 100%, #9e9e9e 0%);
+  font-family: "Staatliches", cursive;
+  text-transform: uppercase;
+  align-items: center;
+  padding: 0px 20px;
+  font-size: 1.7rem;
+}
+
+.stigs {
+  height: 270%;
+}
+
+.stigs_holder {
+  height: 100%;
+  overflow:hidden;
+}

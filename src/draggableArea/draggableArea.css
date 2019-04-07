@@ -7,7 +7,7 @@
 }
 
 .draggableArea .board {
-  min-width: calc(25% - 2px);
+  min-width: calc(25% - 4px);
   border-left: 2px dotted #fff;
 }
 
