@@ -1,18 +1,24 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./App.css";
 import Header from "./header/header";
-import DraggableArea from "./draggableArea/draggableArea";
+//import DraggableArea from "./draggableArea/draggableArea";
+import initialData from "./dataset/initialData";
 import Footer from "./footer/footer";
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <DraggableArea />
-        <Footer lives={3} points={0} />
-      </div>
-    );
-  }
-}
+const App = () => {
+  const [useData, setData] = useState(initialData);
+
+  return (
+    <div className="App">
+      <Header />
+      {useData.columnList.map(columnId => {
+        const column = useData.columns[columnId];
+        const cars = useData.cars.map(car => useData.cars[carId])
+
+      })
+      }
+      <Footer points={useData.points} lives={useData.lives} />
+    </div>
+  );
+};
 
 export default App;

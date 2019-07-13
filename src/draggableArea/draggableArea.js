@@ -8,18 +8,6 @@ import Column from "../column/column";
 export default function DraggableArea() {
   const [indexCar, updateIndexCar] = useState(0);
 
-  const updatingCar = board => {
-    console.log(board);
-    if (cars[indexCar].board === board) {
-      updateIndexCar(indexCar + 1);
-    } else {
-    }
-  };
-
-  const allowDrop = event => {
-    event.preventDefault();
-  };
-
   const objectArray = Object.values(BOARDS);
 
   return (
@@ -28,8 +16,7 @@ export default function DraggableArea() {
         {objectArray.map((board, index) => (
           <Column
             key={index}
-            onDrop={() => updatingCar(board)}
-            onDragOver={event => allowDrop(event)}
+          
           />
         ))}
 
