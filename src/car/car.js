@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from 'styled-components';
-import "./car.css";
+import styled from "styled-components";
 
 export default function Car(props) {
   return (
@@ -38,5 +37,5 @@ const StyledCarText = styled.p`
 
 Car.propTypes = {
   image: PropTypes.string.isRequired,
-  model: PropTypes.string.isRequired
+  model: PropTypes.string.isRequired,
 };
