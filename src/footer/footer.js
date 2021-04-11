@@ -46,6 +46,7 @@ const Button = styled.button`
   padding: 8px;
   cursor: pointer;
   max-height: 44px;
+  outline: none;
 `;
 
 const StyledFooter = styled.footer`
